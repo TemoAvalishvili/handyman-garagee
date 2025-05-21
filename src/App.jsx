@@ -1,48 +1,25 @@
-import "./App.css";
+import Hero from "./components/Hero";
+import Description from "./components/Description";
+import Contact from "./components/Contact";
 
 function App() {
   return (
-    <div className="min-h-screen bg-gray-100 text-gray-800">
-      <header className="text-center p-6 bg-white shadow-md">
-        <h1 className="text-3xl font-bold">Garage for Rent</h1>
+    <div className="min-h-screen bg-gray-900 text-white">
+      <header className="w-full py-8 bg-gray-800 shadow-md">
+        <h1 className="text-4xl font-bold text-center text-white">
+          ქირავდება გარაჟი
+        </h1>
       </header>
 
-      <main className="p-6 space-y-10">
-        {/* Garage Image */}
-        <section>
-          <img
-            src="/garage.png"
-            alt="Garage"
-            className="w-full max-w-3xl mx-auto rounded-lg shadow-lg"
-          />
-        </section>
-
-        {/* Description */}
-        <section className="max-w-3xl mx-auto text-lg">
-          <h2 className="text-2xl font-semibold mb-2">Description</h2>
-          <p>
-            Spacious and secure garage available for rent in central Tbilisi.
-            Suitable for car storage or small workshop.
-          </p>
-        </section>
-
-        {/* Contact */}
-        <section className="max-w-3xl mx-auto text-lg">
-          <h2 className="text-2xl font-semibold mb-2">Contact</h2>
-          <p>
-            📞 Phone:{" "}
-            <a href="tel:+995123456789" className="text-blue-600">
-              +995 123 456 789
-            </a>
-          </p>
-          <p>
-            📧 Email:{" "}
-            <a href="mailto:garage@example.com" className="text-blue-600">
-              garage@example.com
-            </a>
-          </p>
-        </section>
+      <main className="w-full px-4 sm:px-8 md:px-16 lg:px-32 py-10 space-y-20">
+        <Hero />
+        <Description />
+        <Contact />
       </main>
+
+      <footer className="text-center text-sm text-gray-400 py-6">
+        &copy; {new Date().getFullYear()} Handyman Garage
+      </footer>
     </div>
   );
 }
