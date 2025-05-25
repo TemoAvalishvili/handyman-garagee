@@ -37,7 +37,7 @@ function App() {
             loading="lazy"
             allowFullScreen
             referrerpolicy="no-referrer-when-downgrade"
-            src="https://maps.google.com/maps?q=41.781455,44.800527&z=17&output=embed&markers=41.781455, 44.800527"
+            src="https://maps.google.com/maps?q=41.781147,44.800635&z=17&output=embed&markers=41.781147, 44.800635"
           ></iframe>
         </div>
       </section>
