@@ -4,13 +4,13 @@ import "swiper/css";
 import "swiper/css/navigation";
 import "./hero.css";
 
-const images = Array.from({ length: 38 }, (_, i) => `/garage${i + 1}.jpg`);
+const images = Array.from({ length: 23 }, (_, i) => `/g${i + 1}.jpg`);
 
 const Hero = () => {
   return (
     <section className="w-full py-6">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div className="rounded-xl overflow-hidden shadow-lg h-[80vh]">
+        <div className="rounded-xl overflow-hidden shadow-lg h-[60vh] sm:h-[70vh] md:h-[80vh]">
           <Swiper
             modules={[Navigation, Autoplay]}
             navigation
@@ -24,7 +24,7 @@ const Hero = () => {
                   <img
                     src={src}
                     alt={`Garage Slide ${idx + 1}`}
-                    className="w-full h-full object-contain transition-all duration-500"
+                    className="w-full h-full object-cover transition-all duration-500"
                   />
                 </div>
               </SwiperSlide>
