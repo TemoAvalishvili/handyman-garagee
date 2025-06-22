@@ -28,14 +28,6 @@ function App() {
         <Description />
         <Contact />
         {/* CTA Button */}
-        <div className="text-center">
-          <a
-            href="#contact"
-            className="inline-block bg-blue-600 hover:bg-blue-700 text-white font-semibold py-3 px-6 rounded-xl transition-all duration-300"
-          >
-            დაგვიკავშირდით
-          </a>
-        </div>
       </main>
 
       {/* Map Section */}
