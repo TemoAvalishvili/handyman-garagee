@@ -14,7 +14,7 @@ const Contact = () => {
           href="mailto:garage@example.com"
           className="text-blue-400 hover:underline"
         >
-          garage@example.com
+          handyman.garage.tbilisi@gmail.com
         </a>
       </p>
     </section>
